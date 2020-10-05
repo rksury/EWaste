@@ -7,12 +7,14 @@ import Colors from '../constants/Colors';
 
 import useColorScheme from '../hooks/useColorScheme';
 import Home from "../screens/TabOneScreen";
-import Form from "../screens/TabFormScreen";
 import Login from "../screens/login";
+import CollectionAgencyForm from "../screens/TabFormScreen";
 import Profile from "../screens/TabTwoScreen";
 
 import {BottomTabParamList, TabFormParamList, TabOneParamList, TabTwoParamList} from '../types';
 import {Button} from "react-native";
+import Registration from "../screens/registration";
+import DisposalAgencyForm from "../screens/DisposalFoemScreen";
 
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -35,7 +37,7 @@ export default function BottomTabNavigator() {
             <BottomTab.Screen
                 // @ts-ignore
                 name="Add"
-                component={TabFormNavigator}
+                component={DisposalAgencyForm}
                 options={{
                     tabBarIcon: ({color}) => <AddBarIcon name="ios-add-circle" color={color}/>,
                 }}
@@ -51,7 +53,7 @@ export default function BottomTabNavigator() {
             <BottomTab.Screen
                 // @ts-ignore
                 name="Log In"
-                component={Login}
+                component={Registration}
                 options={{
                     tabBarIcon: ({color}) => <TabBarIcon name="ios-log-in" color={color}/>,
                 }}
@@ -93,9 +95,7 @@ function TabOneNavigator() {
                 options={{
                     headerTitle: 'Home',
                     headerStyle: {backgroundColor: '#62bf4e'},
-                    headerTitleStyle: {color: '#fff', fontWeight: 'bold'},
-                    // headerRight: ()=> <ActionBarImage />,
-
+                    headerTitleStyle: {color: '#fff', fontWeight: 'bold', textAlign:'center'},
                 }}
             />
         </TabOneStack.Navigator>
@@ -104,21 +104,21 @@ function TabOneNavigator() {
 
 const TabFormStack = createStackNavigator<TabFormParamList>();
 
-function TabFormNavigator() {
-    return (
-        <TabFormStack.Navigator>
-            <TabTwoStack.Screen
-                name="TabTwoScreen"
-                component={Form}
-                options={{
-                    headerTitle: 'Form',
-                    headerStyle: {backgroundColor: '#62bf4e'},
-                    headerTitleStyle: {color: '#fff', fontWeight: 'bold'},
-                }}
-            />
-        </TabFormStack.Navigator>
-    );
-}
+// function TabFormNavigator() {
+//     return (
+//         <TabFormStack.Navigator>
+//             <TabTwoStack.Screen
+//                 name="TabTwoScreen"
+//                 component={Form}
+//                 options={{
+//                     headerTitle: 'Form',
+//                     headerStyle: {backgroundColor: '#62bf4e'},
+//                     headerTitleStyle: {color: '#fff', fontWeight: 'bold'},
+//                 }}
+//             />
+//         </TabFormStack.Navigator>
+//     );
+// }
 
 const TabTwoStack = createStackNavigator<TabTwoParamList>();
 

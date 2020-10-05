@@ -95,17 +95,6 @@ const styles = StyleSheet.create({
         width: '100%',
         alignItems: 'center',
     },
-
-    SignButton: {
-        backgroundColor: '#62bf4e',
-        borderColor: '#c5c7c5',
-        borderRadius: 10,
-        borderWidth: 2,
-        padding: 6,
-        width: '70%',
-        color: '#fff',
-        fontWeight: 'bold',
-    },
     LoginButton: {
         backgroundColor: '#62bf4e',
         borderColor: '#c5c7c5',
@@ -117,6 +106,17 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         alignContent: 'center',
         fontWeight: "bold",
+    },
+
+    SignButton: {
+        backgroundColor: '#62bf4e',
+        borderColor: '#c5c7c5',
+        borderRadius: 10,
+        borderWidth: 2,
+        padding: 6,
+        width: '70%',
+        color: '#fff',
+        fontWeight: 'bold',
     },
 
     accounttext: {

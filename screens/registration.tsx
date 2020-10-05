@@ -11,17 +11,13 @@ export default function Registration() {
             <Text style={styles.heading}>Register New User </Text>
             <ScrollView>
                 <View style={styles.content}>
-
-                    <TextInput style={styles.input} placeholder='username'/>
-                        <Text style={styles.text}>Username</Text>
-
-                    <TextInput style={styles.input} placeholder='email'/>
+                    <TextInput style={styles.input}/>
                         <Text style={styles.text}>Email</Text>
 
-                    <TextInput style={styles.input} placeholder='number' keyboardType={"numeric"}/>
+                    <TextInput style={styles.input} keyboardType={"numeric"}/>
                         <Text style={styles.text}>Number</Text>
 
-                    <TextInput  style={styles.input} placeholder='number' secureTextEntry={true}/>
+                    <TextInput  style={styles.input} secureTextEntry={true}/>
                     <Text style={styles.text}>Password</Text>
 
                 </View>

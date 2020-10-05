@@ -5,22 +5,13 @@ import { Button, } from 'react-native-paper';
 // import Icon from 'react-native-vector-icons/FontAwesome';
 import {Text, View} from '../components/Themed';
 
-export default function CollectionAgencyForm() {
+export default function DisposalAgencyForm() {
     return (
         <View style={styles.container}>
-            <Text style={styles.heading}>Add New Consignment </Text>
+            <Text style={styles.heading}>Update Consignment Detail</Text>
             <ScrollView>
                 <View style={styles.content}>
-                    <TextInput
-                        keyboardType='default'
-                        style={styles.input}
-                        placeholder='Order Number'
-                    />
-                    <TextInput
-                        keyboardType='numeric'
-                        style={styles.input}
-                        placeholder='Net Weight in Kg'
-                    />
+
                     <TextInput
                         keyboardType='default'
                         style={styles.input}
@@ -35,17 +26,6 @@ export default function CollectionAgencyForm() {
                         style={styles.cameradiv}>Capture photo</Button>
                     <Text style={styles.text}>Photo of the vehicle with the waste, without tarpaulin</Text>
 
-                    <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}
-                        style={styles.cameradiv}>Capture photo</Button>
-                    <Text style={styles.text}>Photo of loaded vehicle with number plate, with tarpaulin </Text>
-
-                    <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}
-                        style={styles.cameradiv}>Capture photo</Button>
-                    <Text style={styles.text}>Upload License Registration Copy</Text>
-
-                    <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}
-                        style={styles.cameradiv}>Capture photo</Button>
-                    <Text style={styles.text}>Upload E Way Bill Copy </Text>
 
                     <Button icon="camera" mode="contained" onPress={() => console.log('Pressed')}
                         style={styles.cameradiv}>Capture photo</Button>
@@ -73,7 +53,7 @@ const styles = StyleSheet.create({
     },
 
     heading: {
-        marginTop: 50,
+       marginTop: 50,
         fontSize: 25,
         fontWeight: 'bold',
         color:'#777977'
