@@ -8,8 +8,8 @@ import {Text, View} from '../components/Themed';
 export default function DisposalAgencyForm() {
     return (
         <View style={styles.container}>
-            <Text style={styles.heading}>Update Consignment Detail</Text>
-            <ScrollView>
+            <Text style={styles.heading}>Add Consignment Detail</Text>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.content}>
 
                     <TextInput

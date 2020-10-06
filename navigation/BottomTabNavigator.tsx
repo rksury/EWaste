@@ -14,7 +14,8 @@ import Profile from "../screens/TabTwoScreen";
 import {BottomTabParamList, TabFormParamList, TabOneParamList, TabTwoParamList} from '../types';
 import {Button} from "react-native";
 import Registration from "../screens/registration";
-import DisposalAgencyForm from "../screens/DisposalFoemScreen";
+import DisposalAgencyForm from "../screens/DisposalFormScreen";
+import ConsignmentDetail from "../screens/ConsignmentDetail";
 
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
@@ -37,7 +38,7 @@ export default function BottomTabNavigator() {
             <BottomTab.Screen
                 // @ts-ignore
                 name="Add"
-                component={DisposalAgencyForm}
+                component={CollectionAgencyForm}
                 options={{
                     tabBarIcon: ({color}) => <AddBarIcon name="ios-add-circle" color={color}/>,
                 }}
@@ -52,8 +53,8 @@ export default function BottomTabNavigator() {
             />
             <BottomTab.Screen
                 // @ts-ignore
-                name="Log In"
-                component={Registration}
+                name="Demo"
+                component={ConsignmentDetail}
                 options={{
                     tabBarIcon: ({color}) => <TabBarIcon name="ios-log-in" color={color}/>,
                 }}

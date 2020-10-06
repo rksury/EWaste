@@ -12,7 +12,7 @@ export default function Profile() {
             </View>
             <View style={styles.card}>
                 <View style={styles.bodyContent}>
-                    <ScrollView>
+                    <ScrollView showsVerticalScrollIndicator={false}>
                     <Text style={styles.Fullname}>Profile Name</Text>
                     <Text style={styles.Usertype}>Collection Agency</Text>
                     <Text style={styles.info}>+91 90 39 363137</Text>
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         padding: 20,
-        backgroundColor: '#62bf4e'
+        backgroundColor: '#7eea63'
     },
 
     avatarBody: {

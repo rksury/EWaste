@@ -9,7 +9,7 @@ export default function CollectionAgencyForm() {
     return (
         <View style={styles.container}>
             <Text style={styles.heading}>Add New Consignment </Text>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.content}>
                     <TextInput
                         keyboardType='default'

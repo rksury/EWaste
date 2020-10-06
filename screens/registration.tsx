@@ -9,7 +9,7 @@ export default function Registration() {
     return (
         <View style={styles.container}>
             <Text style={styles.heading}>Register New User </Text>
-            <ScrollView>
+            <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.content}>
                     <TextInput style={styles.input}/>
                         <Text style={styles.text}>Email</Text>
