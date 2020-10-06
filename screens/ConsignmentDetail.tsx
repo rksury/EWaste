@@ -13,7 +13,6 @@ class ConsignmentDetail extends React.Component {
                     </View>
                 </ScrollView>
             </View>
-
         )
     }
 
@@ -41,3 +40,5 @@ const styles = StyleSheet.create({
 
     }
 })
+
+
